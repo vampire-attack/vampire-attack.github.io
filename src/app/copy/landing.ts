@@ -1,15 +1,6 @@
-{
+export const landingData = {
     "home": {
-        "header": {
-            "title": "unleash <br> your fury",
-            "subtitle": "Attack the top DeFi protocols and reclaim your power.",
-            "button": {
-                "name": "MIGRATE LIQUIDITY NOW",
-                "url": "#",
-                "target": "_blank"
-            }
-        },
-        "segment-1": [
+        "segmentOne": [
             {
                 "title": "What is <br> Vampire Attack?",
                 "description": "We are attacking the top DeFi protocols: Uniswap, Sushiswap, 1inch, and Curve. They have all betrayed their users and can't execute. This is the revenge of the users."
@@ -24,13 +15,5 @@
             }
         ]
     },
-    "footer": {
-        "title": "How to participate",
-        "subtitle": "Migrate your liquidity in just a few steps.",
-        "button": {
-            "name": "MIGRATE LIQUIDITY NOW",
-            "url": "#",
-            "target": "_blank"
-        }
-    }
+  
 }
