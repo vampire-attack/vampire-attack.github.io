@@ -1,5 +1,34 @@
-@import url('./fonts.css');
+@import url('/fonts/font.scss');
 
+.text-small {
+  font-size: 16pt !important;
+}
+
+.text-14 {
+  font-size: 14px !important;
+}
+
+.text-medium {
+  font-size: 19pt !important;
+  /* font-size: calc(0.6rem + 1vw) !important */
+}
+
+.text-large {
+  font-size: 30pt !important;
+}
+
+.text-xlarge {
+  font-size: 48pt !important;
+}
+
+.text-xxlarge {
+  font-size: 73pt !important;
+  /* font-size: calc(2.2rem + 4vw) !important; */
+}
+
+.text-bold {
+  font-weight: 700;
+}
 /* For WebKit-based browsers */
 ::-webkit-scrollbar {
     width: 5px;
@@ -30,15 +59,16 @@
 
 body {
     /* background-color: #101010; */
-    background-color: #0B0B0B;
+    background-color: #0B0B0B !important;
+    font-family: 'Helvetica Neue' !important;
 }
 
 .bg-red {
-    background: #FC393A;
+    background: #FC393A !important;
 }
 
 .text-red {
-    color: #FC393A;
+    color: #FC393A !important;
 }
 
 .text-d4 {
@@ -133,7 +163,7 @@ body {
 }
 
 .mt-high {
-    margin-top: 8rem;
+    margin-top: 8rem !important;
 }
 
 .mb-high {
@@ -261,7 +291,12 @@ body {
 
 /* */
 @media (max-width:1600px) {
-
+    #bg-footer {
+        height: 700px;
+        width: unset !important;
+        transform: translate(-20%);
+        opacity: 0.7;
+    }
 
     #footer-cont {
         height: 700px;
@@ -280,7 +315,12 @@ body {
         opacity: 0.8;
     }
 
-
+    #bg-footer {
+        height: 600px;
+        width: unset !important;
+        transform: translate(-30%);
+        opacity: 0.6;
+    }
 
     #footer-cont {
         height: 630px;
@@ -305,7 +345,12 @@ body {
         opacity: 0.8;
     }
 
-
+    #bg-footer {
+        height: 650px;
+        width: unset !important;
+        transform: translate(-50%);
+        opacity: 0.5;
+    }
 
     #footer-cont {
         height: 650px;
@@ -336,6 +381,12 @@ body {
         opacity: 0.8;
     }
 
+    #bg-footer {
+        height: 600px;
+        width: unset !important;
+        transform: translate(-50%);
+        opacity: 0.4;
+    }
 
     #footer-cont {
         height: 630px;
@@ -347,7 +398,7 @@ body {
     }
 
     .mt-high {
-        margin-top: 4rem;
+        margin-top: 4rem !important;
     }
 
     #defi-bg {
@@ -358,6 +409,17 @@ body {
         margin-inline: auto;
         z-index: -1;
         opacity: 0.3;
+    }
+    .text-xxlarge{
+        font-size: 35pt !important;
+    }
+    .text-xlarge{
+        font-size: 35pt !important;
+
+    }
+    .text-medium{
+        font-size: 15pt !important;
+
     }
 }
 
@@ -563,7 +625,7 @@ body {
 
     .btn-xpadding {
         padding: 10px !important;
-
+        font-size: 14px !important;
     }
 
     .header-cont {
@@ -667,7 +729,7 @@ body {
 
     .btn-xpadding {
         padding: 10px !important;
-
+        font-size: 14px !important;
     }
 
     .navbar-brand img {
