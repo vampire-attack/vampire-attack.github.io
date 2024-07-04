@@ -101,7 +101,7 @@ export default function Footer() {
                 <img src="./img/bg-footer.png" className="p-0" alt="footer image" id="bg-footer" />
                 <div className="container d-flex h-100">
                     <div className="px-3 ms-md-2 ms-lg-5 px-lg-0 w-lg-60 my-auto">
-                        <div className="text-uppercase mt-high item appear2">
+                        <div className="text-uppercase mt-high item">
                             <h1 className="text-uppercase monserrat-bold text-xlarge text-narrow-height"
                                 dangerouslySetInnerHTML={{
                                     __html: typeof footerData.title === 'string'
@@ -111,7 +111,7 @@ export default function Footer() {
 
                             </h1>
                         </div>
-                        <div className="text-thin text-medium fauna-one my-4 text-narrow-height text-d4 mb-5 item appear2"
+                        <div className="text-thin text-medium fauna-one my-4 text-narrow-height text-d4 mb-5 item"
                             dangerouslySetInnerHTML={{
                                 __html: typeof footerData.subtitle === 'string'
                                     ? footerData.subtitle
@@ -120,7 +120,7 @@ export default function Footer() {
 
                         </div>
                         <a target={footerData.button.target}
-                            href={footerData.button.url} className="box btn nunito-semibold text-small bg-red btn-xpadding mb-high text-dark item appear2">
+                            href={footerData.button.url} className="box btn nunito-semibold text-small bg-red btn-xpadding mb-high text-dark item">
                             {footerData.button.name}
                         </a>
                     </div>

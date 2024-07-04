@@ -27,7 +27,7 @@ export default function Header() {
 
                 <div id="seg-0" className="row position-relative">
                     <div className="ps-lg-5 position-relative overflow-hidden mt-high w-100 container header-cont">
-                        <div className="px-3 px-lg-0 w-lg-50 fade-effect" fade-time="2" fade-direction="left">
+                        <div className="px-3 px-lg-0 w-lg-50">
                             <div className="text-uppercase text-narrow-height mt-5">
                                 <h1 className="text-uppercase monserrat-bold text-xxlarge text-narrow-height"
                                     dangerouslySetInnerHTML={{
