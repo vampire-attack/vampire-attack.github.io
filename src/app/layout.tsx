@@ -12,8 +12,10 @@ export const metadata: Metadata = {
     url: 'https://vampireattack.com',
     images: 'https://vampire-attack.github.io/vampireattack.com/img/vampire-attack-thumbnail.png',
   },
-  
-  
+  icons: {
+    icon: "/img/navbar-logo.svg"
+  }
+
 };
 export default function RootLayout({
   children,

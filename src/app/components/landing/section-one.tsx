@@ -1,7 +1,14 @@
 "use client"
 
-import { useEffect } from "react";
 import { landingData } from "@/app/copy/landing";
+
+import { Fauna_One, Montserrat } from 'next/font/google'
+const montserrat = Montserrat({ subsets: ['latin'] })
+const faunaOne = Fauna_One({
+    subsets: ['latin'],
+    weight: "400"
+})
+
 
 export default function SectionOne() {
     return (
@@ -31,14 +38,14 @@ export default function SectionOne() {
                     {landingData.home.segmentOne.map((item, index) =>
                     (
                         <div className="mt-5" key={index}>
-                            <h3 className="monserrat-bold text-large text-uppercase"
+                            <h3 className={`text-large text-uppercase text-bold ${montserrat.className}`}
                                 dangerouslySetInnerHTML={{
                                     __html: typeof item.title === 'string'
                                         ? item.title
                                         : ""
                                 }}
-                                ></h3>
-                            <p className="text-d4 text-medium fauna-one w-90 mt-4"
+                            ></h3>
+                            <p className={`text-d4 text-medium fauna-one w-90 mt-4 ${faunaOne.className} `}
                                 dangerouslySetInnerHTML={{
                                     __html: typeof item.description === 'string'
                                         ? item.description
@@ -49,7 +56,7 @@ export default function SectionOne() {
                     )
 
                     )}
-                    
+
                 </div>
             </div>
         </>

@@ -1,10 +1,16 @@
 "use client"
 
-import { useEffect } from "react";
-import { headerData } from "../copy/header";
 
+import { headerData } from "../copy/header";
+import { Fauna_One, Montserrat, Nunito } from 'next/font/google'
+const montserrat = Montserrat({ subsets: ['latin'] })
+const faunaOne = Fauna_One({
+    subsets: ['latin'],
+    weight: "400"
+})
+const nunito = Nunito({ subsets: ['latin'] })
 export default function Header() {
- 
+
     return (
         <div className="container-fluid" id="main-header">
             <div className="heroImage">
@@ -29,7 +35,7 @@ export default function Header() {
                     <div className="ps-lg-5 position-relative overflow-hidden mt-high w-100 container header-cont">
                         <div className="px-3 px-lg-0 w-lg-50">
                             <div className="text-uppercase text-narrow-height mt-5">
-                                <h1 className="text-uppercase monserrat-bold text-xxlarge text-narrow-height"
+                                <h1 className={`text-uppercase text-bold text-xxlarge text-narrow-height ${montserrat.className}`}
                                     dangerouslySetInnerHTML={{
                                         __html: typeof headerData.title === 'string'
                                             ? headerData.title
@@ -38,11 +44,11 @@ export default function Header() {
 
                                 </h1>
                             </div>
-                            <div className="text-thin text-medium fauna-one my-4 text-narrow-height text-d4 mb-5 ">
+                            <div className={`text-thin text-medium my-4 text-narrow-height text-d4 mb-5 ${faunaOne.className} `}>
                                 {headerData.subtitle}
                             </div>
                             <a target={headerData.button.target}
-                                href={headerData.button.url} className="box btn nunito-semibold text-small bg-red btn-xpadding mb-high text-dark">
+                                href={headerData.button.url} className={`box btn text-semibold text-small bg-red btn-xpadding mb-high text-dark ${nunito.className}`}>
                                 {headerData.button.name}
                             </a>
                         </div>

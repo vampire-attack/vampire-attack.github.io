@@ -2,6 +2,16 @@
 
 import { useEffect } from "react";
 import { footerData } from "../copy/footer";
+import { Montserrat } from 'next/font/google'
+import $ from "jquery"
+const montserrat = Montserrat({ subsets: ['latin'] })
+import { Fauna_One } from 'next/font/google'
+const faunaOne = Fauna_One({
+    subsets: ['latin'],
+    weight: "400"
+})
+import { Nunito } from 'next/font/google'
+const nunito = Nunito({ subsets: ['latin'] })
 export default function Footer() {
     useEffect(() => {
         const loadScript = (src: string) => {
@@ -83,7 +93,7 @@ export default function Footer() {
                 const deltaX = (clientX - centerX) / centerX;
                 const deltaY = (clientY - centerY) / centerY;
 
-                images.forEach((image:any, index) => {
+                images.forEach((image: any, index) => {
                     const depth = (index + 1) * 10;
                     const offsetX = -deltaX * depth;
                     const offsetY = -deltaY * depth;
@@ -99,10 +109,10 @@ export default function Footer() {
         <div className="mt-high" id="footer-cont">
             <div id="seg-3" className="h-100 position-relative">
                 <img src="./img/bg-footer.png" className="p-0" alt="footer image" id="bg-footer" />
-                <div className="container d-flex h-100">
+                <div className="container d-flex h-100 text-center justify-content-center">
                     <div className="px-3 ms-md-2 ms-lg-5 px-lg-0 w-lg-60 my-auto">
                         <div className="text-uppercase mt-high item">
-                            <h1 className="text-uppercase monserrat-bold text-xlarge text-narrow-height"
+                            <h1 className={`text-uppercase text-xlarge text-narrow-height text-bold ${montserrat.className} `}
                                 dangerouslySetInnerHTML={{
                                     __html: typeof footerData.title === 'string'
                                         ? footerData.title
@@ -111,7 +121,7 @@ export default function Footer() {
 
                             </h1>
                         </div>
-                        <div className="text-thin text-medium fauna-one my-4 text-narrow-height text-d4 mb-5 item"
+                        <div className={`text-thin text-medium my-4 text-narrow-height text-d4 mb-5 item ${faunaOne.className}`}
                             dangerouslySetInnerHTML={{
                                 __html: typeof footerData.subtitle === 'string'
                                     ? footerData.subtitle
@@ -120,7 +130,7 @@ export default function Footer() {
 
                         </div>
                         <a target={footerData.button.target}
-                            href={footerData.button.url} className="box btn nunito-semibold text-small bg-red btn-xpadding mb-high text-dark item">
+                            href={footerData.button.url} className={`box btn  text-small bg-red btn-xpadding mb-high text-dark item ${nunito.className}`}>
                             {footerData.button.name}
                         </a>
                     </div>
