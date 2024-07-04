@@ -23,7 +23,7 @@ export default function Header() {
                 <img id="vampire-and-horse" className="laser-eyes" src="./img/heroImage/laser-eyes.png" alt="" />
             </div>
             <div className="container">
-                <div className="navbar navbar-dark mb-3 mt-1 px-4 fixed-top">
+                <div className="navbar navbar-dark mb-3 mt-1 px-4">
                     <a className="navbar-brand" href="./index.html">
                         <span className="text-small px-1">
                             <img src="./img/navbar-logo.svg" alt="Vampire Attack Logo" /></span>

@@ -40,63 +40,65 @@
 
 
 
-    /* FONTS */
-    .monserrat {
-        font-family: 'Montserrat' !important;
-    }
+/* FONTS */
+.monserrat {
+    font-family: 'Montserrat' !important;
+}
 
-    .monserrat-bold {
-        font-family: 'Montserrat-Bold' !important;
-    }
+.monserrat-bold {
+    font-family: 'Montserrat-Bold' !important;
+}
 
-    .monserrat-semibold {
-        font-family: 'Montserrat-SemiBold' !important;
-    }
+.monserrat-semibold {
+    font-family: 'Montserrat-SemiBold' !important;
+}
 
-    .monserrat-regular {
-        font-family: 'Montserrat-Regular' !important;
-    }
+.monserrat-regular {
+    font-family: 'Montserrat-Regular' !important;
+}
 
-    .monserrat-medium {
-        font-family: 'Montserrat-Regular' !important;
-    }
+.monserrat-medium {
+    font-family: 'Montserrat-Regular' !important;
+}
 
-    .nunito-semibold {
-        font-family: 'Nunito-SemiBold' !important;
-    }
+.nunito-semibold {
+    font-family: 'Nunito-SemiBold' !important;
+}
 
-    .fauna-one {
-        font-family: 'Fauna One Regular' !important;
-    }
+.fauna-one {
+    font-family: 'Fauna One Regular' !important;
+}
+
 .text-small {
-  font-size: 16pt !important;
+    font-size: 16pt !important;
 }
 
 .text-14 {
-  font-size: 14px !important;
+    font-size: 14px !important;
 }
 
 .text-medium {
-  font-size: 19pt !important;
-  /* font-size: calc(0.6rem + 1vw) !important */
+    font-size: 19pt !important;
+    /* font-size: calc(0.6rem + 1vw) !important */
 }
 
 .text-large {
-  font-size: 30pt !important;
+    font-size: 30pt !important;
 }
 
 .text-xlarge {
-  font-size: 48pt !important;
+    font-size: 48pt !important;
 }
 
 .text-xxlarge {
-  font-size: 73pt !important;
-  /* font-size: calc(2.2rem + 4vw) !important; */
+    font-size: 73pt !important;
+    /* font-size: calc(2.2rem + 4vw) !important; */
 }
 
 .text-bold {
-  font-weight: 700;
+    font-weight: 700;
 }
+
 /* For WebKit-based browsers */
 ::-webkit-scrollbar {
     width: 5px;
@@ -412,14 +414,17 @@ body {
         z-index: -1;
         opacity: 0.3;
     }
-    .text-xxlarge{
+
+    .text-xxlarge {
         font-size: 35pt !important;
     }
-    .text-xlarge{
+
+    .text-xlarge {
         font-size: 35pt !important;
 
     }
-    .text-medium{
+
+    .text-medium {
         font-size: 15pt !important;
 
     }
@@ -702,7 +707,7 @@ body {
         position: absolute !important;
         z-index: -1;
         opacity: .3;
-       
+
     }
 
     .bg-what-main {
@@ -841,6 +846,12 @@ body {
 
 .navbar-brand img {
     filter: brightness(60%) !important;
+}
+
+.navbar {
+    position: absolute !important;
+    left: 0 ;
+    top: 0;
 }
 
 .bg-what-main {
